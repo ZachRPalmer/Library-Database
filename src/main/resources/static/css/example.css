@@ -1,0 +1,89 @@
+/* comments*/
+h1, h2, h3, h4 {
+	color: #324f9d;
+	padding-left: 10px;
+}
+
+h1 {
+	font-size: 110%;
+	padding: 5px;
+	padding-left: 10px;
+	margin: 0px;
+}
+
+h2, h3, h4 {
+	padding: 5px;
+	padding-left: 10px;
+	margin: 0px;
+	font-size: 100%;
+	font-variant: small-caps;
+}
+
+p, ul, dd, dt, dl {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+li {
+	margin-left: 20px;
+	padding-left: 5px;
+}
+
+table {
+	margin-left: 20px;
+	margin-right: 5px;
+}
+
+body {
+	background-color: lightgray;
+	margin: 20px;
+	padding: 0px;
+	font: 100% sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #324f9d;
+	font-weight: bold;
+}
+
+a:visited {
+	color: #324f9d;
+}
+
+#highlight {
+	background-color: #7FFFD4; /* Aquamarine  */
+}
+
+#header {
+  background: black url(https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjKq4POspjfAhVl6IMKHe5ACWIQjRx6BAgBEAU&url=https%3A%2F%2Fwandering-through-time-and-place.com%2F2015%2F04%2F16%2Fthe-bigger-sacramento-book-club-bsbc-26-years-and-counting%2Fbookshelf-3%2F&psig=AOvVaw318ylxy5kPt55aVt1H_-Gk&ust=1544638931653195) center no-repeat;
+}
+
+pre.code {
+	border: 1px dashed #3c78b5;
+	font-size: 12px;
+	font-family: Courier;
+	margin: 10px;
+	line-height: 13px;
+}
+
+table.prettytable {
+	margin: 1em 1em 1em 2em;
+	background: whitesmoke;
+	border-collapse: collapse;
+}
+
+table.prettytable th, table.prettytable td {
+	border: 1px silver solid;
+	padding: 0.2em;
+}
+
+table.prettytable th {
+	background: gainsboro;
+	text-align: left;
+}
+
+table.prettytable caption {
+	margin-left: inherit;
+	margin-right: inherit;
+}

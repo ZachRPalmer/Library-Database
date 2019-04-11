@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+    <link rel="stylesheet" type="text/css" href="css/example.css" />
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body bgcolor=#e8e8e8>
+    
+    <h1>Borrowers</h1>
+    <table class = "prettytable">
+    
+    <tr>
+    <th>Card Number</th>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>Address</th>
+    <th>Password</th>
+    
+    </tr>
+    
+     <tr th:each="borrower: ${borList}">
+        <td th:text="${borrower.cardNo}" />
+        <td th:text="${borrower.name}" />
+        <td th:text="${borrower.phone}" />
+        <td th:text="${borrower.address}" />
+        <td th:text="${borrower.password}" />
+        <td>
+        <a th:href="@{'/editBorrower/' + ${borrower.cardNo}}">edit</a>
+        </td>
+
+    </tr>
+    
+    
+    </table> 
+    
+    
+</body>
+</html>

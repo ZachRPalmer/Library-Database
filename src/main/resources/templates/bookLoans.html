@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+    <link rel="stylesheet" type="text/css" href="css/example.css" />
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body bgcolor=#e8e8e8>
+    
+    <h1>Book Loans</h1>
+    <table class = "prettytable">
+    
+    <tr>
+    <th>Book ID</th>
+    <th>Branch ID</th>
+    <th>Card Number</th>
+    <th>Date Out</th>
+    <th>Due Date</th>
+
+    
+    </tr>
+    
+     <tr th:each="book_Loan: ${bookList}">
+        <td th:text="${book_Loan.bookId}" />
+        <td th:text="${book_Loan.branchId}" />
+        <td th:text="${book_Loan.cardNo}" />
+        <td th:text="${book_Loan.dateOut}" />
+        <td th:text="${book_Loan.dueDate}" />
+    </tr>
+    
+    
+    </table> 
+    
+    
+</body>
+</html>

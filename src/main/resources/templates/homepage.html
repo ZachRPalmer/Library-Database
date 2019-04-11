@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/example.css" />
+<style>
+.center {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #e8e8e8
+}
+</style>
+</head>
+<body class="center">
+	<p th:text="${message}" />
+	<h1 style="text-align: center">Totally Legitimate "Library"</h1>
+	<form style="text-align: center" action="/welcome">
+		Card Number:<br> <input type="text" name="cardNo"><br>
+		Password:<br> <input type="text" name="password"><br>
+		<input type="submit" value="Submit">
+	</form>
+	<p style="text-align: center">
+		Not a member?<a href="/signup"> Join Today!</a>
+	</p>
+</body>
+</html>

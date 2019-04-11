@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/example.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body bgcolor=#e8e8e8>
+	<div id="header"></div>
+	<p th:text="'Logged in as: ' + ${borrower.name}" />
+	<p th:text="${message}" />
+	<h1 style="text-align: center">Totally Legitimate "Library"</h1>
+	<h2>Books</h2>
+	<table class="prettytable">
+
+		<tr>
+			<th>Title</th>
+			<th>Publisher</th>
+			<th>Checkout</th>
+
+		</tr>
+
+		<tr th:each="book: ${bookList}">
+			<td th:text="${book.title}" />
+			<td th:text="${book.publisher}" />
+			<td><a
+				th:href="@{'/checkout/' + ${book.bookId} + ${borrower.cardNo}}">Checkout</a>
+			</td>
+
+		</tr>
+
+
+	</table>
+
+
+</body>
+</html>
